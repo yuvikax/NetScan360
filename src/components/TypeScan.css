@@ -1,0 +1,113 @@
+.type-scan-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.type-scan-container .form-control {
+  width: 300px;
+}
+
+/* .type-scan-container .btn-primary {
+  background-color: #008080;
+  color: white;
+} */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle::after {
+  content: "▼";
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  z-index: 1;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-align: left;
+  width: 100%;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+.target-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+  margin-bottom: 1rem;
+}
+
+.target-container .d-flex {
+  display: flex;
+  align-items: center; /* Align items horizontally */
+  gap: 10px; /* Added gap between label and input */
+}
+
+
+.target-container .form-label {
+  margin-bottom: 0; /* Removed margin-bottom */
+}
+
+.target-container .form-control {
+  width: 300px;
+}
+
+.target-container .btn-primary {
+  background-color: #008080;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.target-container .btn-primary:hover {
+  background-color: #00cccc;
+  transform: scale(1.1);
+}
+
+
+.type-scan-container .btn-success {
+  background-color: #008080;
+}
+
+.form-control.invalid {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+}
